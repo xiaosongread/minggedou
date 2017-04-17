@@ -1,4 +1,5 @@
 App({
+	
 	api:{
 		domainName:'http://localhost:8080'//本地域名
 		// domainName:"https://blog.songyanbin.com"//生产域名
