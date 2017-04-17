@@ -1,0 +1,31 @@
+@import "../../wxParse/wxParse.wxss";
+.contentInfoIndex{
+    line-height: 100rpx;
+    margin-bottom: 20rpx;
+    font-size:24rpx;
+}
+
+.contentInfoIndex .title{
+    font-size: 36rpx;
+    font-weight: bold;
+    line-height: 80rpx;
+    height: 80rpx;
+    padding: 0 20rpx;
+}
+.contentInfoIndex .flex-articleBar{
+    display: flex;
+    line-height: 40rpx;
+    padding: 0 20rpx;
+    border-bottom: 1px dashed #ccc;
+}
+.contentInfoIndex .flex-articleBar .date{
+    margin:0 30rpx;
+}
+.contentInfoIndex .articleIntroduction{
+    font-size: 28rpx;
+    padding: 20rpx;
+    line-height: 40rpx;
+}
+.contentInfoIndex .contentInfoCons{
+    padding: 30rpx;
+}

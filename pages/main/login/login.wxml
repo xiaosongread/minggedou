@@ -1,0 +1,16 @@
+<view class="flex-wrp" style="flex-direction:row; justify-content:center;display: block;">
+    <!--<view class="main_box">欢迎登陆小宋博客</view>-->
+    <view class="userInfo">
+        <view class="userHead"></view>
+        <view class="userNameWords">宋彦斌</view>
+    </view>
+</view>
+<view class="registeredItem">
+    <label>用户名:</label>
+    <input id="userName" class="item" type="text" placeholder="请输入用户名" />
+</view>
+<view class="registeredItem">
+    <label>密码:</label>
+    <input id="userPasswords" class="item" type="text" placeholder="请输入注册密码" />
+</view>
+<button class="btn">注册</button>

@@ -1,0 +1,56 @@
+.flex-wrp{
+    width: 100%;
+    height: 300rpx;
+    background: red;
+    margin-bottom: 20rpx;
+    background: url('https://blog.songyanbin.com/public/images/ueditorImg/2017_4_15_11_42_52_979_1001.png') center;
+    background-size: 100%;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+.userInfo{
+    padding-top:65rpx;
+    text-align: center;
+}
+.userInfo .userHead{
+    width: 120rpx;
+    height: 120rpx;
+    margin:0 auto;
+    border-radius:120rpx;
+    border: 1px solid #fff; 
+}
+.userInfo .userNameWords{
+    line-height: 50rpx;
+    color: #fff;
+}
+.flex-wrp .main_box{
+    padding-top: 130rpx;
+    /*margin-left: 200rpx*/
+    text-align: center;
+    color: #fff;
+}
+.registeredItem{
+    padding: 0 30rpx;
+    overflow: hidden;
+    display: block;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    background: #fff;
+}
+.registeredItem label,input{
+    height: 80rpx;
+    line-height: 80rpx;
+    float: left;
+}
+.registeredItem label{
+    width: 130rpx;
+    margin-right: 30rpx;
+}
+
+.btn{
+    width: 300rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    margin:60rpx auto;
+}

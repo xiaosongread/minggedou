@@ -1,0 +1,18 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="contentInfoIndex">
+    <view class="title">{{data.title}}</view>
+    <view class="flex-articleBar">
+        <view class="category">react-vue</view>
+        <view class="date">{{data.startTime}}</view>
+        <view class="lookNum">{{data.views}}</view>
+    </view>
+    <!--<view class="contentInfoCons wxParse">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>-->
+    <view class="wxParse">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+</view>
+<view class="mgd_bottom">
+    <text>Copyright 抿圪斗博客 京ICP备17007771号-1</text>
+</view>

@@ -1,0 +1,22 @@
+page{
+    background: #ecebeb;
+}
+.mgd_bottom{
+    font-size:26rpx;
+    width: 100%;
+    line-height: 80rpx;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+.morePrompt{
+    width: 100%;
+    line-height: 50rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
+.wxParse-pre{
+    background: #555;
+    color: #dddddd;
+    border-radius: 5px;
+    padding: 20rpx;
+}

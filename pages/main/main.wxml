@@ -1,0 +1,31 @@
+<view class="flex-wrp" style="flex-direction:row; justify-content:center;display: block;">
+    <view class="main_box" wx:if="{{userInfoShow}}">
+        <view class="flex-item login" bindtap="login">登陆</view>
+        <view class="flex-item registered" bindtap="registered">注册</view>
+    </view>
+    <view class="userInfo" wx:else>
+        <view class="userHead">
+            <image src="{{header}}" class="headerImage"></image>
+        </view>
+        <view class="userNameWords">{{userName}}</view>
+    </view>
+</view>
+<view class="mainItem">
+    <view class="mainItemName">github:</view>
+    <view class="mainItemText">https://github.com/xiaosongread/</view>
+</view>
+<view class="mainItem">
+    <view class="mainItemName">QQ:</view>
+    <view class="mainItemText">598349146</view>
+</view>
+<view class="mainItem">
+    <view class="mainItemName">微信:</view>
+    <view class="mainItemText">syb598349146</view>
+</view>
+<view class="mainItem">
+    <view class="mainItemName">博客:</view>
+    <view class="mainItemText">https://blog.songyanbin.com</view>
+</view>
+<view class="mgd_bottom">
+    <text>Copyright 抿圪斗博客 京ICP备17007771号-1</text>
+</view>

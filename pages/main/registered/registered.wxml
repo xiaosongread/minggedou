@@ -1,0 +1,16 @@
+<view class="flex-wrp" style="flex-direction:row; justify-content:center;display: block;">
+    <view class="main_box">欢迎注册小宋博客</view>
+</view>
+<view class="registeredItem">
+    <label>用户名:</label>
+    <input id="username" class="item" type="text" placeholder="请输入用户名" bindchange="usernameValue" />
+</view>
+<view class="registeredItem">
+    <label>密码:</label>
+    <input id="password" class="item" type="text" placeholder="请输入注册密码" bindchange="passwordValue" />
+</view>
+<view class="registeredItem">
+    <label>确认:</label>
+    <input id="repassword" class="item" type="text" placeholder="请确认密码" bindchange="repasswordValue" />
+</view>
+<button class="btn" bindtap="registeredFn">注册</button>

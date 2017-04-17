@@ -1,0 +1,72 @@
+.flex-wrp{
+    height: 300rpx;
+    background: red;
+    margin-bottom: 40rpx;
+    background: url('https://blog.songyanbin.com/public/images/ueditorImg/2017_4_15_11_42_52_979_1001.png') center;
+    background-size: 100%;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.userInfo{
+    padding-top:65rpx;
+    text-align: center;
+}
+.userInfo .userHead{
+    width: 120rpx;
+    height: 120rpx;
+    margin:0 auto;
+    border-radius:120rpx;
+    border: 1px solid #fff; 
+    position: relative;
+    overflow: hidden;
+}
+.userInfo .userHead .headerImage{
+    width: 120rpx;
+    height: 120rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.userInfo .userNameWords{
+    font-size: 26rpx;
+    line-height: 50rpx;
+    color: #fff;
+}
+
+.flex-wrp .main_box{
+    padding-top: 130rpx;
+    /*margin-left: 200rpx*/
+    text-align: center;
+}
+.flex-wrp .flex-item{
+    width: 150rpx;
+    line-height: 60rpx;
+    color: #fff;
+    text-align: center;
+    font-size: 28rpx;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+.flex-wrp .main_box .flex-item:nth-of-type(2){
+    margin-left: 50rpx;
+}
+.mainItem{
+    line-height: 50rpx;
+    font-size: 30rpx;
+    padding: 0 30rpx;
+    overflow: hidden;
+}
+.mainItemName,.mainItemText{
+    float: left;
+}
+.mainItemName{
+    width: 80rpx;
+    margin-right: 50rpx;
+}
+.mgd_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

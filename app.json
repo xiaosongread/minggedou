@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/hotContent/hotContent",
+		"pages/contentInfo/contentInfo",
+		"pages/main/main",
+		"pages/main/login/login",
+		"pages/main/registered/registered"
+  ],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#23b69a",
+		"navigationBarTitleText": "抿圪斗博客",
+		"navigationBarTextStyle": "#fff"
+	},
+  "tabBar": {
+    "color":"#ccc",
+		"borderStyle": "#ccc",
+		"backgroundColor":"#000",
+		"selectedColor": "#23b69a",
+		"list": [{
+			"pagePath": "pages/index",
+			"text": "首页",
+			"iconPath":"img/index.png",
+			"selectedIconPath":"img/index1.png"
+		}, {
+			"pagePath": "pages/hotContent/hotContent",
+			"text": "热门",
+			"iconPath":"img/hot.png",
+			"selectedIconPath":"img/hot1.png"
+		}, {
+			"pagePath": "pages/main/main",
+			"text": "我的",
+			"iconPath":"img/2.png",
+			"selectedIconPath":"img/2-2.png"
+		}
+		]
+	}
+}
