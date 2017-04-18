@@ -34,6 +34,7 @@ Page({
 			},
 			success: function (res) {
 				var data = res.data.data[0];
+				data.startTime = app.fn.setTime(data.startTime)
 				_this.setData({
 					data: data,
 					contents:data.content

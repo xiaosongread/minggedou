@@ -42,13 +42,16 @@ Page({
               // appId : app.data.appId,
               // sessionKey : app.data.sessionKey,
               // encryptedData : app.data.encryptedData,
-              // iv : app.data.iv
+              // iv : app.data.iv,
               openId : app.data.openid,
-              header : app.data.header
+              header : app.data.header,
+              username : app.data.userName
             },
             success: function (res) {
               console.log(res)
               if(res.data.code == 38 || res.data.code == 4){
+                var userInfos = res.data.data;
+                wx.setStorageSync('userInfo', userInfos);
                 wx.navigateBack({//返回上一个页面(我的页面)
                   delta: 1
                 })

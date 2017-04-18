@@ -33,7 +33,7 @@
 }
 
 .btn{
-    width: 300rpx;
+    width: 350rpx;
     height: 80rpx;
     line-height: 80rpx;
     text-align: center;

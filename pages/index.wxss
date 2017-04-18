@@ -2,6 +2,20 @@
 .index_box{
     font-size: 24rpx;
 }
+.index_box .refresh{
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 100rpx;
+    width: 100%;
+    font-size: 30rpx;
+    text-align: center;
+    color: #000;
+    z-index: -999
+}
+.index_box .scrollView{
+    background: #ecebeb;
+}
 .index_box .scrollView .scroll-view-item{
     width: 100%;
     padding-bottom: 20rpx;

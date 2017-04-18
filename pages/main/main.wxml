@@ -1,6 +1,6 @@
 <view class="flex-wrp" style="flex-direction:row; justify-content:center;display: block;">
     <view class="main_box" wx:if="{{userInfoShow}}">
-        <view class="flex-item login" bindtap="login">登陆</view>
+        <view class="flex-item login" bindtap="loginFn">登陆</view>
         <view class="flex-item registered" bindtap="registered">注册</view>
     </view>
     <view class="userInfo" wx:else>

@@ -12,7 +12,7 @@ Page({
 		wx.showToast({
 			title: '加载中',
 			icon: 'loading',
-			duration: 500
+			duration: 2000
 		});
 		var _this = this;
 		wx.request({
@@ -49,11 +49,16 @@ Page({
 				this.getData();
 		}
 	},
-	// onPullDownRefresh: function () {
-	// 	wx.stopPullDownRefresh();
-	// 	this.data.page = 0;
-    //     this.getData();
-    // },
+	onPullDownRefresh: function () {//下拉刷新
+		setTimeout(function(){
+			wx.stopPullDownRefresh();
+		},1000)
+		this.setData({
+			page:1,
+			data:[]
+		})
+		this.getData();
+    },
 	onShareAppMessage: function () {//设置分享
         return {
           title: '抿圪斗博客',
