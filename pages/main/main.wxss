@@ -53,20 +53,33 @@
     margin-left: 50rpx;
 }
 .mainItem{
-    line-height: 50rpx;
+    line-height: 70rpx;
     font-size: 30rpx;
-    padding: 0 30rpx;
+    padding: 0 20rpx;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15rpx;
     overflow: hidden;
 }
 .mainItemName,.mainItemText{
+    margin-left: 20rpx;
     float: left;
 }
 .mainItemName{
-    width: 80rpx;
-    margin-right: 50rpx;
+    width: 70rpx;
+    padding-right: 50rpx;
+    border-right: 1px solid #ddd;
 }
 .mgd_bottom{
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+.btn{
+    width: 80%;
+    color: #23b69a;
+    margin-top: 40rpx;
+    border: 1px solid #23b69a;
 }

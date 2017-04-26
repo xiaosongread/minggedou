@@ -1,9 +1,9 @@
 <view class="flex-wrp" style="flex-direction:row; justify-content:center;display: block;">
-    <view class="main_box" wx:if="{{userInfoShow}}">
-        <view class="flex-item login" bindtap="loginFn">登陆</view>
-        <view class="flex-item registered" bindtap="registered">注册</view>
+    <view class="main_box" wx:if="{{!userInfoShow}}">
+        <view class="flex-item login" bindtap="loginFn">登 陆</view>
+        <!--<view class="flex-item registered" bindtap="registered">注册</view>-->
     </view>
-    <view class="userInfo" wx:else>
+    <view class="userInfo" wx:if="{{userInfoShow}}">
         <view class="userHead">
             <image src="{{header}}" class="headerImage"></image>
         </view>
@@ -26,6 +26,7 @@
     <view class="mainItemName">博客:</view>
     <view class="mainItemText">https://blog.songyanbin.com</view>
 </view>
+<button class="btn" bindtap="remove" wx:if="{{isExitBtn}}">退出登陆</button>
 <view class="mgd_bottom">
     <text>Copyright 抿圪斗博客 京ICP备17007771号-1</text>
 </view>

@@ -1,6 +1,11 @@
 <view class="index_box">
     <view class="refresh">下拉刷新</view>
     <scroll-view scroll-y="true" class="scrollView">
+        <view class="categoriesBox">
+            <block wx:for="{{categories}}">
+            <view class="categories" bindtap="jumpCategories" id="{{item._id}}">{{item.name}}</view>
+            </block>
+        </view>
         <block wx:for="{{data}}">
         <view class="scroll-view-item" bindtap="jumpFn" id="{{item._id}}">
             <view class="title" >{{item.title}}</view>
@@ -18,10 +23,10 @@
     </scroll-view>
 </view>
 <view class="morePrompt" wx:if="{{count != data.length}}">
-    加载更多数据
+    下拉有惊喜
 </view>
 <view class="morePrompt" wx:else>
-    没有更多数据
+    亲，没有更多数据
 </view>
 <view class="mgd_bottom">
     <text>Copyright 抿圪斗博客 京ICP备17007771号-1</text>

@@ -34,13 +34,14 @@ Page({
 			},
 			success: function (res) {
 				var data = res.data.data[0];
+				console.log(data)
 				data.startTime = app.fn.setTime(data.startTime)
 				_this.setData({
 					data: data,
-					contents:data.content
+					contents:res.data.data[0].content
 				})
 				var article = _this.data.contents;
-				WxParse.wxParse('article', 'html', article, _this);
+				WxParse.wxParse('article', 'html', article, _this,5);
 				wx.hideToast();
 			}
 		})

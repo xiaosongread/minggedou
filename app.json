@@ -3,9 +3,11 @@
     "pages/index",
     "pages/hotContent/hotContent",
 		"pages/contentInfo/contentInfo",
+		"pages/categoryList/categoryList",
 		"pages/main/main",
 		"pages/main/login/login",
 		"pages/main/registered/registered"
+		
   ],
 	"window": {
 		"backgroundTextStyle": "light",
@@ -14,7 +16,7 @@
 		"navigationBarTextStyle": "#fff"
 	},
   "tabBar": {
-    "color":"#ccc",
+    "color":"#fff",
 		"borderStyle": "#ccc",
 		"backgroundColor":"#000",
 		"selectedColor": "#23b69a",

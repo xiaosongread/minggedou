@@ -1,12 +1,27 @@
 var app = getApp();
 Page({
-    data: {
-    	data: [],
+	data: {
+		data: [],
 		page: 1, //记录当前请求数据的页数
-		count: 0 //文章列表总共的页数
-    },
-    onReady: function () {
+		count: 0 ,//文章列表总共的页数
+		categories:[]//分类
+	},
+	onReady: function () {
+		this.getCategories();
 		this.getData();
+	},
+	getCategories:function(){
+		var _this = this;
+		wx.request({
+			url: app.api.domainName + '/api/categories',
+			method: 'post',
+			success: function (res) {
+				console.log(res.data)
+				_this.setData({
+					categories: res.data.data
+				})
+			}
+		})
 	},
 	getData: function () {
 		wx.showToast({
@@ -35,10 +50,37 @@ Page({
 			}
 		})
 	},
+	getCategoriesData:function(e){
+		wx.request({
+			url: app.api.domainName + '/api/categoryListContent',
+			method: 'post',
+			headers:{
+				id:_this.data.page,
+				limte:10
+			},
+			success: function (res) {
+				console.log(res.data.data)
+				res.data.data.forEach(function(item,index){
+					res.data.data[index].startTime = app.fn.setTime(res.data.data[index].startTime)
+				})
+				_this.setData({
+					count: res.data.count,
+					data: _this.data.data.concat(res.data.data)
+				})
+				wx.hideToast();
+			}
+		})
+	},
 	jumpFn: function(e){
 		var id = e.currentTarget.id;
 		wx.navigateTo({
 		  url: './contentInfo/contentInfo?id='+id
+		})
+	},
+	jumpCategories:function(e){
+		var id = e.currentTarget.id;
+		wx.navigateTo({
+		  url: './categoryList/categoryList?id='+id
 		})
 	},
 	onReachBottom: function () {
