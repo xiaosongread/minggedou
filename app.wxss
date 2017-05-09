@@ -1,5 +1,6 @@
 page{
-    background: #ecebeb;
+    min-height: 100%;
+    background: #f2f2f2;
 }
 .mgd_bottom{
     font-size:26rpx;
@@ -20,4 +21,17 @@ page{
     color: #dddddd;
     border-radius: 5px;
     padding: 20rpx;
+}
+
+.loadbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
 }

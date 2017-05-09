@@ -9,7 +9,8 @@ App({
 		sessionKey: "",
 		iv:"",
 		code:"",
-		secret:'53350954146a3e4255987c11746fd19d'
+		secret:'53350954146a3e4255987c11746fd19d',
+		screenHeight:0
 	},
 	fn:{
 		setTime:function (now) { 
@@ -24,6 +25,8 @@ App({
 		}
 	},
 	onLaunch:function(){//小程序初始化完成的时候执行一次（全程生命周期只执行一次）
+		var res = wx.getSystemInfoSync()	
+		this.data.screenHeight = res.screenHeight;
 		// var _this = this;
 		// wx.login({
 		// 	success: function(res) {

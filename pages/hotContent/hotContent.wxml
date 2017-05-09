@@ -1,4 +1,4 @@
-<view class="index_box">
+<view class="index_box" wx:if="{{isAjaxSucess}}">
     <scroll-view scroll-y="true" class="scrollView">
         <block wx:for="{{array}}">
         <view class="scroll-view-item" bindtap="jumpFn" id="{{item._id}}">
@@ -16,6 +16,9 @@
         </block>
     </scroll-view>
 </view>
-<view class="mgd_bottom">
+<view class="flex-wrp loadbox" style="height:{{height}}px" wx:if="{{!isAjaxSucess}}">
+    <image src="../../img/loading.gif" class="load"></image> 
+</view>
+<view class="mgd_bottom" wx:if="{{isAjaxSucess}}">
     <text>Copyright 抿圪斗博客 京ICP备17007771号-1</text>
 </view>

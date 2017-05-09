@@ -1,4 +1,8 @@
 /** 修改默认的navigator点击态 **/
+.contentBox{
+    width: 100%;
+    min-height: 100%;
+}
 .index_box{
     font-size: 24rpx;
 }

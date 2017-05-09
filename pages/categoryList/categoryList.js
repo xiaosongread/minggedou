@@ -6,7 +6,9 @@ Page({
 		count: 0 ,//文章列表总共的页数
 		categories:[],//分类
 		nowCategoriesName:"",//当前分类名称
-		id:""//分类的id
+		id:"",//分类的id
+		height:0,//屏幕的高度
+		isAjaxSucess:false//标记ajax请求数据是否成功
 	},
 	onLoad: function(options){
 		var that = this;
@@ -32,34 +34,41 @@ Page({
 		})
 	},
 	getData: function (id) {
+		var height = app.data.screenHeight
+		this.setData({
+			height:height
+		})
 		wx.showToast({
 			title: '加载中',
 			icon: 'loading',
 			duration: 2000
 		});
 		var _this = this;
-		wx.request({
-			url: app.api.domainName + '/api/categoryListContent',
-			method: 'get',
-			data:{
-				page:_this.data.page,
-				limte:10,
-				id:_this.data.id
-			},
-			success: function (res) {
-				console.log(res.data.data)
-				console.log(res.data.data[0].category.name)
-				res.data.data.forEach(function(item,index){
-					res.data.data[index].startTime = app.fn.setTime(res.data.data[index].startTime)
-				})
-				_this.setData({
-					count: res.data.count,
-					data: _this.data.data.concat(res.data.data),
-					nowCategoriesName:res.data.data[0].category.name
-				})
-				wx.hideToast();
-			}
-		})
+		setTimeout(function(){
+			wx.request({
+				url: app.api.domainName + '/api/categoryListContent',
+				method: 'get',
+				data:{
+					page:_this.data.page,
+					limte:10,
+					id:_this.data.id
+				},
+				success: function (res) {
+					console.log(res.data.data)
+					console.log(res.data.data[0].category.name)
+					res.data.data.forEach(function(item,index){
+						res.data.data[index].startTime = app.fn.setTime(res.data.data[index].startTime)
+					})
+					_this.setData({
+						count: res.data.count,
+						data: _this.data.data.concat(res.data.data),
+						nowCategoriesName:res.data.data[0].category.name,
+						isAjaxSucess:true
+					})
+					wx.hideToast();
+				}
+			})
+		},500)
 	},
 	getData1: function (id) {
 		wx.showToast({
@@ -103,8 +112,9 @@ Page({
 		this.getData1(id)
 	},
 	jumpFn: function(e){
+		var id = e.currentTarget.id;
 		wx.navigateTo({
-		  url: './contentInfo/contentInfo?id='+id
+		  url: '../contentInfo/contentInfo?id='+id
 		})
 	},
 	onReachBottom: function () {
@@ -121,7 +131,8 @@ Page({
 		},1000)
 		this.setData({
 			page:1,
-			data:[]
+			data:[],
+			isAjaxSucess:false
 		})
 		this.getData1();
     },
