@@ -40,7 +40,7 @@
 .contentInfoIndex .contentInfoCons{
     padding: 30rpx;
 }
-.wxParse-div{
+/*.wxParse-div{
     display: none;
 }
 .wxParse-pre {
@@ -55,4 +55,4 @@
 }
 .wxParse-h4,.wxParse-h5{
     background: none !important;
-}
+}*/
