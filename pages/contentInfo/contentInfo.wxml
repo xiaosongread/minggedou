@@ -2,11 +2,11 @@
 <view class="contentInfoIndex">
     <view class="title">{{data.title}}</view>
     <view class="flex-articleBar">
-        <image class="icons" src="https://blog.songyanbin.com/public/images/list.png"></image> 
+        <image class="icons" src="https://www.songyanbin.com/public/images/list.png"></image> 
         <view class="category">react-vue</view>
-        <image class="icons" src="https://blog.songyanbin.com/public/images/time.png"></image> 
+        <image class="icons" src="https://www.songyanbin.com/public/images/time.png"></image> 
         <view class="date">{{data.startTime}}</view>
-        <image class="icons" src="https://blog.songyanbin.com/public/images/views.png"></image> 
+        <image class="icons" src="https://www.songyanbin.com/public/images/views.png"></image> 
         <view class="lookNum">{{data.views}}</view>
     </view>
     <!--<view class="contentInfoCons wxParse">

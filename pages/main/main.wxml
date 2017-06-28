@@ -24,7 +24,7 @@
 </view>
 <view class="mainItem">
     <view class="mainItemName">博客:</view>
-    <view class="mainItemText">https://blog.songyanbin.com</view>
+    <view class="mainItemText">https://www.songyanbin.com</view>
 </view>
 <button class="btn" bindtap="remove" wx:if="{{isExitBtn}}">退出登陆</button>
 <view class="mgd_bottom">

@@ -16,6 +16,8 @@
     font-size: 28rpx;
     color: #666;
     line-height: 1.8;
+    padding:15rpx;
+  background:#ffffff;
 }
 view{
     word-break:break-all; overflow:auto;
