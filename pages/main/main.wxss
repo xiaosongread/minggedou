@@ -1,7 +1,7 @@
 .flex-wrp{
     height: 300rpx;
     background: red;
-    margin-bottom: 40rpx;
+    margin-bottom: 20rpx;
     background: url('https://www.songyanbin.com/public/images/ueditorImg/2017_4_15_11_42_52_979_1001.png') center;
     background-size: 100%;
     -webkit-box-align: center;
@@ -55,7 +55,7 @@
 .mainItem{
     line-height: 70rpx;
     font-size: 30rpx;
-    padding: 0 20rpx;
+    padding: 0 10rpx 0 0;
     background: #fff;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -67,8 +67,8 @@
     float: left;
 }
 .mainItemName{
-    width: 70rpx;
-    padding-right: 50rpx;
+    width: 90rpx;
+    padding-right: 20rpx;
     border-right: 1px solid #ddd;
 }
 .mgd_bottom{

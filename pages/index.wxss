@@ -26,6 +26,8 @@
     line-height: 80rpx;
     background: #fff;
     border-bottom: 1px solid #ddd;
+    position:fixed;
+    width:100%;
 }
 .index_box .scrollView .categoriesBox .categories{
     flex:1;

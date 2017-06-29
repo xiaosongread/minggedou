@@ -17,7 +17,6 @@
     color: #666;
     line-height: 1.8;
     padding:15rpx;
-  background:#ffffff;
 }
 view{
     word-break:break-all; overflow:auto;
@@ -71,7 +70,7 @@ view{
 
 .wxParse-i,.wxParse-cite,.wxParse-em,.wxParse-var,.wxParse-address{font-style:italic}
 .wxParse-pre,.wxParse-tt,.wxParse-code,.wxParse-kbd,.wxParse-samp{font-family:monospace}
-.wxParse-pre{white-space:pre}
+.wxParse-pre{white-space:pre;margin-bottom:15rpx;}
 .wxParse-big{font-size:1.17em}
 .wxParse-small,.wxParse-sub,.wxParse-sup{font-size:.83em}
 .wxParse-sub{vertical-align:sub}
@@ -200,4 +199,6 @@ view{
 	background:#f0f0f0;
 	border-top:1px solid #e0e0e0;
 }
-
+.wxParse-p{
+  margin-bottom: 15rpx;
+}

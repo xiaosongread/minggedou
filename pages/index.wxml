@@ -7,6 +7,7 @@
                 <view class="categories" bindtap="jumpCategories" id="{{item._id}}">{{item.name}}</view>
                 </block>
             </view>
+            <view class="emptyBox"></view>
             <block wx:for="{{data}}">
             <view class="scroll-view-item" bindtap="jumpFn" id="{{item._id}}">
                 <view class="title" >{{item.title}}</view>

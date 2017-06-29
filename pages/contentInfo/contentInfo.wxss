@@ -1,4 +1,7 @@
 @import "../../wxParse/wxParse.wxss";
+page{
+    background:#ffffff;
+}
 .contentInfoIndex{
     line-height: 100rpx;
     margin-bottom: 20rpx;
