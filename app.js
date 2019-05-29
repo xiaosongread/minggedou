@@ -1,6 +1,6 @@
 App({
 	api:{
-		// domainName:'http://localhost:8080'//本地域名
+		// domainName:'http://127.0.0.1:8080'//本地域名
 		domainName:"https://www.songyanbin.com"//生产域名
 	},
 	data:{

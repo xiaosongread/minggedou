@@ -6,7 +6,8 @@ Page({
 		count: 0 ,//文章列表总共的页数
 		categories:[],//分类
 		height:0,//屏幕的高度
-		isAjaxSucess:false//标记ajax请求数据是否成功
+		isAjaxSucess:false,//标记ajax请求数据是否成功
+    token:''
 
 	},
 	onReady: function () {
@@ -118,5 +119,37 @@ Page({
           desc: '抿圪斗博客-首页',
           path: 'index/index'
         }
-    }
+  },
+  saoma: function(){
+    var _this = this;
+    wx.request({
+      url: app.api.domainName + '/api/user/WeChat/token',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log("数据分析接口数据:", res)
+        // _this.setData({
+        //   token: res.token
+        // })
+      }
+    })
+
+    // wx.request({
+    //   url: 'https://api.weixin.qq.com/datacube/getweanalysisappiduserportrait?access_token=ACCESS_TOKEN',
+    //   method: 'post',
+    //   headers: {
+    //     id: _this.data.page,
+    //     limte: 10
+    //   },
+    //   data: {
+    //     "begin_date": "2017-06-11",
+    //     "end_date": "2017-12-17"
+    //   },
+    //   success: function (res) {
+    //     console.log("111:",res)
+        
+    //   }
+    // })
+  }
 })

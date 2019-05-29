@@ -19,10 +19,6 @@
     <view class="mainItemText">598349146</view>
 </view>
 <view class="mainItem">
-    <view class="mainItemName">微信</view>
-    <view class="mainItemText">syb598349146</view>
-</view>
-<view class="mainItem">
     <view class="mainItemName">博客</view>
     <view class="mainItemText">https://www.songyanbin.com</view>
 </view>

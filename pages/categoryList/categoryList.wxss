@@ -22,13 +22,14 @@
     line-height: 80rpx;
     background: #fff;
     border-bottom: 1px solid #ddd;
+    background:#23b69a;
 }
 .index_box .scrollView .categoriesBox .categories{
     flex:1;
     text-align: center;
 }
 .index_box .scrollView .categoriesBox .nowCategoriesName{
-    color: #23b69a;
+    color:#fff;
 }
 
 .index_box .scrollView .scroll-view-item{

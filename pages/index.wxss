@@ -28,6 +28,7 @@
     border-bottom: 1px solid #ddd;
     position:fixed;
     width:100%;
+    background:#23b69a;
 }
 .index_box .scrollView .categoriesBox .categories{
     flex:1;
