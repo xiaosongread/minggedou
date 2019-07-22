@@ -11,11 +11,11 @@
 		"backgroundTextStyle": "light",
 		"navigationBarBackgroundColor": "#23b69a",
 		"navigationBarTitleText": "抿圪斗博客",
-		"navigationBarTextStyle": "#fff"
+		"navigationBarTextStyle": "white"
 	},
   "tabBar": {
     "color":"#ccc",
-		"borderStyle": "#ccc",
+		"borderStyle": "white",
 		"backgroundColor":"#000",
 		"selectedColor": "#23b69a",
 		"list": [{
