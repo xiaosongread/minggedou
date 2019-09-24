@@ -1,27 +1,10 @@
-<view class="index_box">
-    <scroll-view scroll-y="true" class="scrollView">
-        <block wx:for="{{data}}">
-        <view class="scroll-view-item" bindtap="jumpFn" id="{{item._id}}">
-            <view class="title" >{{item.title}}</view>
-            <view class="flex-articleBar">
-                <image class="icons" src="https://blog.songyanbin.com/public/images/list.png"></image>  
-                <view class="category">{{item.category.name}}</view>
-                <image class="icons" src="https://blog.songyanbin.com/public/images/time.png"></image> 
-                <view class="date">{{item.startTime}}</view>
-                <image class="icons" src="https://blog.songyanbin.com/public/images/views.png"></image> 
-                <view class="lookNum">{{item.views}}</view>
-            </view>
-            <view class="articleIntroduction">{{item.description}}</view>
-        </view>
-        </block>
-    </scroll-view>
-</view>
-<view class="morePrompt" wx:if="{{count != data.length}}">
-    加载更多数据
-</view>
-<view class="morePrompt" wx:else>
-    没有更多数据
-</view>
-<view class="mgd_bottom">
-    <text>Copyright 抿圪斗博客 京ICP备17007771号-1</text>
+<view>
+  <view class='canvasBox'>
+   <!--  -->
+    <canvas class='share-canvas' canvas-id="share_canvas" style="width:{{canvasW}}px;height:{{canvasH}}px"></canvas>
+  </view>
+  <view class='btnBox'>
+    <view bindtap="setHeader" data-type="getImage">选择头像</view>
+    <view bindtap='saveImage'>导出头像</view>
+  </view>
 </view>
